@@ -65,3 +65,28 @@ This project includes the a Dockerfile and a docker-compose to let you run the a
     ```
 
 6. The API will be available at `http://localhost:8000/api/recipes/`.
+
+## Security Checks
+
+1. Create a virtualenv using pyenv
+
+    ```bash
+    pyenv virtualenv drf # will use your default python version - this was all tested with python 3.9.9
+    ```
+
+3. Activate the virtualenv
+
+    ```bash
+    pyenv activate drf
+    ```
+
+3. Install required tools
+
+    ```bash
+    pip install -r security-reqs.txt
+    ```
+
+4. Run security checks
+    ```bash
+    pre-commit run --all
+    ```
