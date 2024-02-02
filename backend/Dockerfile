@@ -6,4 +6,4 @@ WORKDIR /drf
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["make", "server"]
