@@ -8,11 +8,15 @@ asgiref==3.7.2
     # via
     #   -r requirements.in
     #   django
+    #   django-cors-headers
 django==4.2.9
     # via
     #   -r requirements.in
+    #   django-cors-headers
     #   django-filter
     #   djangorestframework
+django-cors-headers==4.3.1
+    # via -r requirements.in
 django-filter==23.5
     # via -r requirements.in
 djangorestframework==3.14.0
