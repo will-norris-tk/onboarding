@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { NavLink, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
 import CreateRecipe from './components/CreateRecipe';
-import { StyledRecipeFormContainer } from './components/StyledRecipeFormContainer';
+import { StyledRecipeFormContainer } from './components/styles/StyledRecipeFormContainer.js';
 import Recipe from './components/EditRecipe.js';
 import RecipeClient from './utils/RecipeClient';
 import StateChangeNotifier from './utils/StateChangeNotifier';
-import { StyledNavBar } from './components/StyledNavBar.js';
+import { StyledNavBar } from './components/styles/StyledNavBar.js';
 
 function App() {
 

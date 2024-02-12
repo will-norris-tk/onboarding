@@ -1,9 +1,9 @@
 import React from 'react';
 import useInputState from '../hooks/useInputState';
-import { StyledRecipeDiv } from './StyledRecipeDiv';
-import { StyledForm } from './StyledForm';
+import { StyledRecipeDiv } from './styles/StyledRecipeDiv';
+import { StyledForm } from './styles/StyledForm';
 import { ControlledRecipeFields } from './ControlledRecipeFields';
-import { StyledFieldset } from './StyledFieldSet';
+import { StyledFieldset } from './styles/StyledFieldSet';
 
 function Recipe(props) {
     const [recipeState, updateRecipe] = useInputState(props.recipe);
