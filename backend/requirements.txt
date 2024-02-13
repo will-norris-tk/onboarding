@@ -9,7 +9,7 @@ asgiref==3.7.2
     #   -r requirements.in
     #   django
     #   django-cors-headers
-django==4.2.9
+django==4.2.10
     # via
     #   -r requirements.in
     #   django-cors-headers
