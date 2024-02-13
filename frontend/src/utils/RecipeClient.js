@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { config } from '../config';
 
 class RecipeClient {
 
-    baseUrl = 'http://localhost:8000/api/recipes/';
+    baseUrl = config.backendUrl;
 
     constructor(notifier) {
         this.notifier = notifier;
