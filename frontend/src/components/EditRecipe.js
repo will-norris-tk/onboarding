@@ -14,6 +14,12 @@ function Recipe(props) {
         props.recipeClient.updateRecipe(recipeState);
     }
 
+    function handleDelete(){
+        if (window.confirm('Are you sure you wish to delete this item?')) {
+            props.recipeClient.deleteRecipe(recipeState.id);
+        }
+    }
+
     return (
         <StyledRecipeDiv>
             <StyledForm onSubmit={handleSubmit}>
@@ -22,7 +28,7 @@ function Recipe(props) {
                 <button>Save</button>
                 </StyledFieldset>
             </StyledForm>
-            <button onClick={() => props.recipeClient.deleteRecipe(recipeState.id)}>Delete</button>
+            <button onClick={handleDelete}>Delete</button>
             <button onClick={() => setIsDisabled(!isDisabled)}>Enable/Disable Editing</button>
         </StyledRecipeDiv>
     )

@@ -44,13 +44,11 @@ class RecipeClient {
     }
     
     async deleteRecipe(id) {
-        if (window.confirm('Are you sure you wish to delete this item?')) {
-            try {
-                await axios.delete(`${this.baseUrl}${id}/`);
-                this.notifier.notifyStateChange();
-            } catch (error) {
-                console.error(error);
-            }
+        try {
+            await axios.delete(`${this.baseUrl}${id}/`);
+            this.notifier.notifyStateChange();
+        } catch (error) {
+            console.error(error);
         }
     }
     
