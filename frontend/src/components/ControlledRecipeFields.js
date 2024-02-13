@@ -11,7 +11,7 @@ export function ControlledRecipeFields({
       <label htmlFor='description'>Description:</label>
       <StyledInput type='text' id='description' name='description' value={recipeState.description} onChange={updateRecipeState}></StyledInput>
       <label htmlFor='ingredients'>Ingredients:</label>
-      <StyledInput type='text' id='ingredients' name='ingredients' value={recipeState.ingredients} onChange={updateRecipeState}></StyledInput>
+      <StyledInput type='text' id='ingredients' name='ingredients' placeholder="Enter a comma separated list of values" value={recipeState.ingredients} onChange={updateRecipeState}></StyledInput>
     </>
   )
   }
