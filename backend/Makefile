@@ -3,7 +3,7 @@
 test:
 	python manage.py test
 
-server:
+server: migrate
 	python manage.py runserver 0.0.0.0:8000
 
 migrate:
